@@ -1,0 +1,10 @@
+# Clock
+NET "clk" LOC = "C9" | IOSTANDARD = LVTTL;  # Example pin - adjust based on board
+
+
+# UART TX to DTE (RS232 module)
+NET "tx" LOC = "M13" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+
+# LEDs
+NET "led<1>" LOC = "E12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
+NET "led<0>" LOC = "F12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8 ;
